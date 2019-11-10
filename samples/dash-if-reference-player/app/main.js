@@ -434,6 +434,7 @@ app.controller('DashController', function ($scope, sources, contributors, dashif
         });
 
         if ($scope.customABRRulesSelected) {
+            $scope.player.addABRCustomRule('qualitySwitchRules', 'DownloadRatioRule', VivekRule); /* jshint ignore:line */
             $scope.player.addABRCustomRule('qualitySwitchRules', 'DownloadRatioRule', DownloadRatioRule); /* jshint ignore:line */
             $scope.player.addABRCustomRule('qualitySwitchRules', 'ThroughputRule', CustomThroughputRule); /* jshint ignore:line */
         } else {
