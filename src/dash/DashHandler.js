@@ -319,6 +319,8 @@ function DashHandler(config) {
             } else {
                 segmentIndex = indexToRequest;
             }
+            logger.info('Vivek Segment Quality: ' + request.quality);
+
         }
 
         if (segment) {
